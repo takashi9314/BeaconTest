@@ -1,0 +1,41 @@
+﻿### TbBTSDK 仕様変更箇所 ###
+
+## ver. 1.2.3 - 2016/6/23
+[Modified]
+「アプリを使用中のみ」位置情報サービス使用が許可されている場合のチェックメソッドの不具合を修正
+	- isBeaconEventConditionMet
+	- isBeaconEventConditionMetForForegroundOnly
+
+## ver. 1.2.2 - 2016/6/6
+
+[Modified]
+インターネット接続がない場合のモニタリング開始不具合の修正　
+
+## ver. 1.2.1 - 2016/3/23
+
+[Added]
+デフォルトでbitcodeをライブラリ内に追加
+
+## ver. 1.2.0 - 2015/9/28
+
+[Modified]
+TbBTManagerクラス
+ initSharedManagerUnderAgreement　メソッドの処理方式変更
+ 	（旧）YESを引数として、TbBTManagerの共有インスタンスを生成可能とし、生成／引数がNOの場合nilを返し、何もしない
+	（新）YESを引数として、TbBTManagerの共有インスタンスを生成可能とし、生成／NOを引数として、nilを返し、TbBTManagerのインスタンスを生成不可にする
+
+## ver. 1.1.1 - 2015/9/28
+
+[Modified]
+TbBTManagerクラス　
+specifyNewUsableServiceBeaconWithCodes:beaconDatas:forRegion:locationManager メソッドと
+specifyNewUsableServiceBeaconWithCodes:beaconDatas:forRegion:locationManager:withOptions メソッドの応答コードの統一
+
+
+ ## ver. 1.1.0 - 2015/9/18
+ 
+ [New (Swift)]
+ TbBTSDK-Bridging-Hedaer.h ファイル追加 .. Swiftアプリケーション用SDKクラス呼び出し用ブリッジ宣言
+ 
+ ## ver. 1.0.0 - 2015/9/1
+ 公開初版作成

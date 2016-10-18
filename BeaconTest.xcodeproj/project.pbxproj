@@ -14,6 +14,12 @@
 		EB09BABA1DB61CE4002A794E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB09BAB81DB61CE4002A794E /* LaunchScreen.storyboard */; };
 		EB09BAC51DB61CE4002A794E /* BeaconTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB09BAC41DB61CE4002A794E /* BeaconTestTests.swift */; };
 		EB09BAD01DB61CE4002A794E /* BeaconTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB09BACF1DB61CE4002A794E /* BeaconTestUITests.swift */; };
+		EB09BADE1DB61D0E002A794E /* TbBTSDK_Normal_v123 in Resources */ = {isa = PBXBuildFile; fileRef = EB09BADD1DB61D0E002A794E /* TbBTSDK_Normal_v123 */; };
+		EB09BAE11DB61D24002A794E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB09BAE01DB61D24002A794E /* CoreLocation.framework */; };
+		EB09BAE31DB61D2F002A794E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB09BAE21DB61D2F002A794E /* AdSupport.framework */; };
+		EB09BAE51DB61D36002A794E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB09BAE41DB61D36002A794E /* CoreBluetooth.framework */; };
+		EB09BAE71DB61D3D002A794E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB09BAE61DB61D3D002A794E /* AVFoundation.framework */; };
+		EB09BAE91DB61D51002A794E /* libTbBTSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB09BAE81DB61D51002A794E /* libTbBTSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		EB09BACB1DB61CE4002A794E /* BeaconTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB09BACF1DB61CE4002A794E /* BeaconTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconTestUITests.swift; sourceTree = "<group>"; };
 		EB09BAD11DB61CE4002A794E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB09BADD1DB61D0E002A794E /* TbBTSDK_Normal_v123 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TbBTSDK_Normal_v123; sourceTree = "<group>"; };
+		EB09BAE01DB61D24002A794E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EB09BAE21DB61D2F002A794E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EB09BAE41DB61D36002A794E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		EB09BAE61DB61D3D002A794E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EB09BAE81DB61D51002A794E /* libTbBTSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTbBTSDK.a; path = TbBTSDK_Normal_v123/libTbBTSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB09BAE91DB61D51002A794E /* libTbBTSDK.a in Frameworks */,
+				EB09BAE71DB61D3D002A794E /* AVFoundation.framework in Frameworks */,
+				EB09BAE51DB61D36002A794E /* CoreBluetooth.framework in Frameworks */,
+				EB09BAE31DB61D2F002A794E /* AdSupport.framework in Frameworks */,
+				EB09BAE11DB61D24002A794E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +94,12 @@
 		EB09BAA31DB61CE4002A794E = {
 			isa = PBXGroup;
 			children = (
+				EB09BADD1DB61D0E002A794E /* TbBTSDK_Normal_v123 */,
 				EB09BAAE1DB61CE4002A794E /* BeaconTest */,
 				EB09BAC31DB61CE4002A794E /* BeaconTestTests */,
 				EB09BACE1DB61CE4002A794E /* BeaconTestUITests */,
 				EB09BAAD1DB61CE4002A794E /* Products */,
+				EB09BADF1DB61D23002A794E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +142,18 @@
 				EB09BAD11DB61CE4002A794E /* Info.plist */,
 			);
 			path = BeaconTestUITests;
+			sourceTree = "<group>";
+		};
+		EB09BADF1DB61D23002A794E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB09BAE81DB61D51002A794E /* libTbBTSDK.a */,
+				EB09BAE61DB61D3D002A794E /* AVFoundation.framework */,
+				EB09BAE41DB61D36002A794E /* CoreBluetooth.framework */,
+				EB09BAE21DB61D2F002A794E /* AdSupport.framework */,
+				EB09BAE01DB61D24002A794E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB09BADE1DB61D0E002A794E /* TbBTSDK_Normal_v123 in Resources */,
 				EB09BABA1DB61CE4002A794E /* LaunchScreen.storyboard in Resources */,
 				EB09BAB71DB61CE4002A794E /* Assets.xcassets in Resources */,
 				EB09BAB51DB61CE4002A794E /* Main.storyboard in Resources */,
@@ -416,8 +448,14 @@
 				DEVELOPMENT_TEAM = 4PZBH3PR9H;
 				INFOPLIST_FILE = BeaconTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TbBTSDK_Normal_v123",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Favy.BeaconTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TbBTSDK_Normal_v123/include/TbBTSDK/TbBTSDK-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -429,8 +467,14 @@
 				DEVELOPMENT_TEAM = 4PZBH3PR9H;
 				INFOPLIST_FILE = BeaconTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TbBTSDK_Normal_v123",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Favy.BeaconTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TbBTSDK_Normal_v123/include/TbBTSDK/TbBTSDK-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
